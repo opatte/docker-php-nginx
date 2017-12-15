@@ -1,4 +1,4 @@
-FROM php:7.1.2-fpm-alpine
+FROM php:7.2-fpm-alpine3.7
 MAINTAINER Thonas Hourlier <thomas.hourlier@foodmeup.io>
 
 ENV NGINX_VERSION 1.11.10
