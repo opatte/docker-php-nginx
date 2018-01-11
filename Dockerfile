@@ -1,5 +1,5 @@
 FROM php:7.1.2-fpm-alpine
-MAINTAINER Thonas Hourlier <thomas.hourlier@foodmeup.io>
+MAINTAINER Su <sullivan.gaglione@foodmeup.io>
 
 ENV NGINX_VERSION 1.11.10
 ENV APP_DIR /var/www/html
