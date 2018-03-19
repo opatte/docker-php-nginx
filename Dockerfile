@@ -97,7 +97,6 @@ RUN echo @testing http://nl.alpinelinux.org/alpine/edge/testing >> /etc/apk/repo
       openssl-dev \
       ca-certificates \
       dialog \
-      libmcrypt-dev \
       libpng-dev \
       icu-dev \
       libpq \
@@ -111,7 +110,7 @@ RUN echo @testing http://nl.alpinelinux.org/alpine/edge/testing >> /etc/apk/repo
       --with-png-dir=/usr/include/ \
       --with-jpeg-dir=/usr/include/ \
     && pecl install xdebug \
-    && docker-php-ext-install iconv pdo pdo_mysql mysqli mbstring mcrypt gd exif intl xsl json soap dom zip opcache bcmath \
+    && docker-php-ext-install iconv pdo pdo_mysql mysqli mbstring gd exif intl xsl json soap dom zip opcache bcmath \
     && docker-php-source delete \
     && mkdir -p /etc/nginx \
     && mkdir -p /run/nginx \
